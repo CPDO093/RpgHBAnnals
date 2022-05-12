@@ -11,6 +11,9 @@ namespace RpgHBAnnals.Model.Weapon
     public class WeaponCreate
     {
         [Required]
+        [Display(Name = "Compatable game ")]
+        public int GameId { get; set; }
+        [Required]
         public WeaponType Type { get; set; }
         [Required]
         public string Name { get; set; }

@@ -243,11 +243,19 @@
     <Content Include="Views\Game\Edit.cshtml" />
     <Content Include="Views\Game\Delete.cshtml" />
     <Content Include="Views\Game\Create.cshtml" />
+    <Content Include="Views\Npc\Index.cshtml" />
+    <Content Include="Views\Npc\Create.cshtml" />
+    <Content Include="Views\Npc\Details.cshtml" />
+    <Content Include="Views\Npc\Edit.cshtml" />
+    <Content Include="Views\Npc\Delete.cshtml" />
+    <Content Include="Views\Weapon\Index.cshtml" />
+    <Content Include="Views\Weapon\Create.cshtml" />
+    <Content Include="Views\Weapon\Details.cshtml" />
+    <Content Include="Views\Weapon\Edit.cshtml" />
+    <Content Include="Views\Weapon\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Npc\" />
-    <Folder Include="Views\Weapon\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

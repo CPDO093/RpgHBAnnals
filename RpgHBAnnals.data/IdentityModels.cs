@@ -46,8 +46,6 @@ namespace RpgHBAnnals.Models
                         .Add(new IdentityUserLoginConfiguration())
                         .Add(new IdentityUserRoleConfiguration());
         }
-
-  
     }
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {

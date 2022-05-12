@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace RpgHBAnnals.Model.Npc
 {
     public class NpcDetail
     {
+        
         public int NpcId { get; set; }
         public Guid CreatorId { get; set; }
         public int GameId { get; set; }
