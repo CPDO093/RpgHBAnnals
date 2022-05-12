@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>RPG Home Brew Annals</h1>
+    <p class="lead">Welcom to a usfule collection of home brewed items for RPG's that are ready to be used in a pinch by a DM in need. Please make an account before exploring the site and any items.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Games</h2>
+        <p>
+            Here is a list of all the current RPG's and similar games we have.
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Check out games", "Index", "Game")></a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Weapons</h2>
+        <p>Here you can find all the Weapons added so far! be sure to look at a few and maybe even try your hand at making one!.</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Check out Weapons", "Index", "Weapon")></a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>NPC's'</h2>
+        <p>You can easily the next NPC for a random encounter or for that new tavern your players are heading to!.</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Check out NPCs", "Index", "Npc")></a></p>
+    </div>
+</div>
