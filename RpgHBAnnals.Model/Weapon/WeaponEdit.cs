@@ -10,8 +10,9 @@ namespace RpgHBAnnals.Model.Weapon
 {
     public class WeaponEdit
     {
-        
+       
         public int WeaponId { get; set; }
+        public int GameId { get; set; }
         public WeaponType Type { get; set; }
         public string Name { get; set; }
         public int Damage { get; set; }

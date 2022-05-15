@@ -10,7 +10,7 @@ namespace RpgHBAnnals.Model.Weapon
 {
     public class WeaponDetail
     {
-        
+       
         public int WeaponId { get; set; }
         public Guid CreatorId { get; set; }
         public int GameId { get; set; }

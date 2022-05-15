@@ -9,8 +9,9 @@ namespace RpgHBAnnals.Model.Npc
 {
     public class NpcListItem
     {
-        
+       
         public int NpcId { get; set; }
+        public int GameId { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
         public string Name { get; set; }
         public string Race { get; set; }

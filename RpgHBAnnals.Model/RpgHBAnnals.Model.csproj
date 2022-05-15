@@ -46,6 +46,7 @@
     <Compile Include="Game\GameDetail.cs" />
     <Compile Include="Game\GameEdit.cs" />
     <Compile Include="Game\GameListItem.cs" />
+    <Compile Include="Game_Npc.cs" />
     <Compile Include="Npc\NpcCreate.cs" />
     <Compile Include="Npc\NpcDetail.cs" />
     <Compile Include="Npc\NpcEdit.cs" />

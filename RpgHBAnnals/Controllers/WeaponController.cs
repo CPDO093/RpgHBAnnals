@@ -68,6 +68,7 @@ namespace RpgHBAnnals.Controllers
             var detail = svc.GetWeaponById(id);
             var model = new WeaponEdit()
             {
+                GameId = detail.GameId,
                 Type = detail.Type,
                 Name = detail.Name,
                 Damage = detail.Damage,

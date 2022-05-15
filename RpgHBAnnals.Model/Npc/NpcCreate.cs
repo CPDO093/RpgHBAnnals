@@ -9,6 +9,9 @@ namespace RpgHBAnnals.Model.Npc
 {
     public class NpcCreate
     {
+       
+        
+        public int GameId { get; set; }
         public string Name { get; set; }
         public string Race { get; set; }
         public string Notes { get; set; }

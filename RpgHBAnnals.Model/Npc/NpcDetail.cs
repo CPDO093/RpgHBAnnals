@@ -9,7 +9,7 @@ namespace RpgHBAnnals.Model.Npc
 {
     public class NpcDetail
     {
-        
+       
         public int NpcId { get; set; }
         public Guid CreatorId { get; set; }
         public int GameId { get; set; }

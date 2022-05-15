@@ -18,8 +18,9 @@ namespace RpgHBAnnals.data
         public Guid CreatorId { get; set; }
 
        
-        [ForeignKey(nameof(Game))]
         public int GameId { get; set; }
+
+        [ForeignKey(nameof(GameId))]
         public virtual Game Game { get; set; }
 
         [Required]

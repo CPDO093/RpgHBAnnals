@@ -39,7 +39,7 @@ namespace RpgHBAnnals.Service
             {
                 var quary = ctx
                                 .Games
-                                .Where(e => e.CreatorId == _userId)
+                                //.Where(e => e.CreatorId == _userId)
                                 .Select(e => new GameListItem()
                                 {
                                     GameId = e.GameId,
@@ -57,7 +57,7 @@ namespace RpgHBAnnals.Service
             {
                 var entity = ctx
                                 .Games
-                                .Single(e => e.GameId == id && e.CreatorId == _userId);
+                                .Single(e => e.GameId == id); // && e.CreatorId == _userId);
                 return new GameDetail()
                 {
                     GameId = entity.GameId,

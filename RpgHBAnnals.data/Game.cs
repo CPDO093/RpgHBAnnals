@@ -23,5 +23,10 @@ namespace RpgHBAnnals.data
         [Required]
         public Guid CreatorId { get; set; }
 
+        //relationship
+
+        public virtual List<Npc> Npc { get; set; }
+
+        public virtual List<Weapon> Weapon { get; set; }
     }
 }

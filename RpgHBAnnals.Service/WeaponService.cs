@@ -12,14 +12,9 @@ namespace RpgHBAnnals.Service
     public class WeaponService
     {
         private readonly Guid _userId;
-        private readonly int _game;
         public WeaponService(Guid userid)
         {
             _userId = userid;
-        }
-        public WeaponService(int gameid)
-        {
-            _game = gameid;
         }
 
         public bool CreateWeapon(WeaponCreate model)
@@ -28,7 +23,7 @@ namespace RpgHBAnnals.Service
             {
 
                 CreatorId = _userId,
-                GameId = _game,
+                GameId = model.GameId,
                 CreatedUtc = DateTimeOffset.Now,
                 Type = model.Type,
                 Name = model.Name,
@@ -88,6 +83,7 @@ namespace RpgHBAnnals.Service
                 var entity = ctx
                                 .Weapons
                                 .Single(e => e.WeaponId == model.WeaponId && e.CreatorId == _userId);
+                entity.GameId = model.GameId;
                 entity.Type = model.Type;
                 entity.Name = model.Name;
                 entity.Damage = model.Damage;

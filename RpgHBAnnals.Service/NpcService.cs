@@ -12,15 +12,10 @@ namespace RpgHBAnnals.Service
     public class NpcService
     {
         private readonly Guid _userId;
-        private readonly int _game;
 
         public NpcService(Guid userid)
         {
             _userId = userid;
-        }
-        public NpcService(int gameid)
-        {
-            _game = gameid;
         }
 
         public bool CreateNpc(NpcCreate model)
@@ -29,7 +24,7 @@ namespace RpgHBAnnals.Service
             {
 
                 CreatorId = _userId,
-                GameId = _game,
+                GameId = model.GameId,
                 CreatedUtc = DateTimeOffset.Now,
                 Name = model.Name,
                 Race = model.Race,
@@ -51,6 +46,7 @@ namespace RpgHBAnnals.Service
                                 .Select(e => new NpcListItem()
                                 {
                                     NpcId = e.NpcId,
+                                    GameId = e.GameId,
                                     CreatedUtc = e.CreatedUtc,
                                     Name = e.Name,
                                     Race = e.Race,
@@ -84,6 +80,7 @@ namespace RpgHBAnnals.Service
                 var entity = ctx
                                 .Npcs
                                 .Single(e => e.NpcId == model.NpcId && e.CreatorId == _userId);
+                entity.GameId = model.GameId;
                 entity.Name = model.Name;
                 entity.Race = model.Race;
                 entity.Notes = model.Notes;

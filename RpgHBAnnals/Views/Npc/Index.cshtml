@@ -1,4 +1,4 @@
-﻿@model IEnumerable<RpgHBAnnals.Model.Game.GameListItem>
+﻿@model IEnumerable<RpgHBAnnals.Model.Npc.NpcListItem>
 
 @{
     ViewBag.Title = "Index";
@@ -12,16 +12,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Edition)
+            @Html.DisplayNameFor(model => model.GameId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CreatedUtc)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreatorId)
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Race)
         </th>
         <th></th>
     </tr>
@@ -29,21 +29,21 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Edition)
+            @Html.DisplayFor(modelItem => item.GameId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.CreatedUtc)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CreatorId)
+            @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GameId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GameId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GameId })
+            @Html.DisplayFor(modelItem => item.Race)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NpcId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NpcId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NpcId })
         </td>
     </tr>
 }

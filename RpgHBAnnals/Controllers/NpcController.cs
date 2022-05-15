@@ -67,6 +67,7 @@ namespace RpgHBAnnals.Controllers
             var detail = svc.GetNpcById(id);
             var model = new NpcEdit()
             {
+                GameId = detail.GameId,
                 Name = detail.Name,
                 Race = detail.Race,
                 Notes = detail.Notes

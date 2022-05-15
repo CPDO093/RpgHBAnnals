@@ -32,9 +32,6 @@ namespace RpgHBAnnals.Models
         {
             return new ApplicationDbContext();
         }
-        public DbSet<Game> Games { get; set; }
-        public DbSet<Npc> Npcs { get; set; }
-        public DbSet<Weapon> Weapons { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -46,6 +43,9 @@ namespace RpgHBAnnals.Models
                         .Add(new IdentityUserLoginConfiguration())
                         .Add(new IdentityUserRoleConfiguration());
         }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Npc> Npcs { get; set; }
+        public DbSet<Weapon> Weapons { get; set; }
     }
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
