@@ -30,16 +30,30 @@ textarea {
     border:2px solid grey;
     background-color:lightgray ;
     border-radius: 10px ;
+    margin: 20px auto !important;
 
 }
 
-.head {
-    border:2px solid grey;
+.Head {
+    border: 2px solid grey;
     border-radius: 20px;
+    background-color: lightgray;
+    margin: 20px auto !important;
+    padding: 10px;
 }
 
-.row{
+.row {
     border: 2px solid grey;
     background-color: lightgray;
-    border-radius: 10px ;
+    border-radius: 10px;
+    margin: 20px auto !important;
 }
+
+.table {
+    border: 2px solid grey;
+    background-color: lightgray;
+    margin: 20px auto !important;
+    padding: 10px;
+}
+
+
