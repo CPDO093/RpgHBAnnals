@@ -26,19 +26,18 @@ textarea {
     max-width: 280px;
 }
 
-.jumbotron{
-    border:2px solid grey;
-    background-color:lightgray ;
-    border-radius: 10px ;
+.jumbotron {
+    border: 2px solid grey;
+    background-color: lightgray;
+    border-radius: 10px;
     margin: 20px auto !important;
-
 }
 
 .Head {
     border: 2px solid grey;
     border-radius: 20px;
     background-color: lightgray;
-    margin: 20px auto !important;
+    margin-top: 20px !important;
     padding: 10px;
 }
 
