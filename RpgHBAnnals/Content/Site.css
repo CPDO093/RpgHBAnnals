@@ -1,12 +1,15 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: #ddce9d url(Parchment.jpg) no-repeat fixed top center;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +24,22 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.jumbotron{
+    border:2px solid grey;
+    background-color:lightgray ;
+    border-radius: 10px ;
+
+}
+
+.head {
+    border:2px solid grey;
+    border-radius: 20px;
+}
+
+.row{
+    border: 2px solid grey;
+    background-color: lightgray;
+    border-radius: 10px ;
 }
